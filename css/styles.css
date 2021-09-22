@@ -1,4 +1,7 @@
+/* { border: red dotted;} */
+
 body {
+  background-color: beige;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +16,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  margin-top: 8em;
+  margin-top: 6em;
+  margin-bottom: 6em;
 }
 
 .hide {
@@ -66,7 +70,7 @@ button:active {
 }
 
 .pet-name {
-  background-color: #20175d;
+  background-color: #b6adeb;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
@@ -75,4 +79,29 @@ button:active {
 
 .ruby {
   width: 200px;
+}
+
+.refresh button {
+  width: 100%;
+  border-radius: 40px;
+  padding: 20px 40px;
+  margin-top: 1.5em;
+  text-align: center;
+  color: white;
+  background-color: #ed59d2;
+  font-family: sans-serif;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.refresh button:hover {
+  cursor: pointer;
+}
+
+.refresh button:active {
+  outline: none;
+  border: none;
 }

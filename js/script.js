@@ -1,4 +1,5 @@
 const statusButton = document.querySelector("button");
+const refreshButton = document.querySelector(".refresh");
 const pets = document.querySelector(".all-pets");
 
 
@@ -54,8 +55,18 @@ const showPets = function(petArray) {
         li.innerHTML = `<span class=pet-name>${pet.name}</span> the ${pet.species} is ${status}`;
         pets.append(li);
     }
+    statusButton.classList.add("hide");
+    refreshButton.classList.remove("hide");
 };
 
 statusButton.addEventListener("click", function () {
+    pets.classList.remove("hide")
     showPets(allPets);
 });
+
+refreshButton.addEventListener("click", function (){
+    refreshButton.classList.add("hide");
+    pets.classList.add("hide");
+    statusButton.classList.remove("hide");
+});
+
